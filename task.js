@@ -31,11 +31,29 @@ function result(meltiNum,divideNum){
             divideNum.push(divide)
         }
     }
-    console.log(divideNum)
-    return meltiNum;
+    // console.log(divideNum)
+    return [meltiNum,divideNum];
 
 }
 
-let rev = result(oddNum , evenNum)
+[oddNum , evenNum]= result()
 
-console.log(rev)
+console.log(oddNum);
+console.log(evenNum)
+
+
+// Task 3
+
+const myArrays= [11,12,13,14,15,16,17,18,19,20];
+
+function make_avg(avg){
+    let sum = 0 ;
+    for(let i of myArrays){
+        sum += i
+    }
+    avg = sum / myArrays.length
+
+    return avg
+}
+
+console.log(make_avg())
