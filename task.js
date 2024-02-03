@@ -75,4 +75,17 @@ function count_zero(){
 
 let counts = count_zero();
 
-console.log(counts)
+console.log(counts);
+
+// Task 5
+
+function odd_even(num){
+    if(num % 2 === 0){
+        return 'even number'
+    }
+    return 'odd number'
+}
+
+let num = odd_even(3)
+
+console.log(num)
