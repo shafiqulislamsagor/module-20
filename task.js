@@ -56,4 +56,23 @@ function make_avg(avg){
     return avg
 }
 
-console.log(make_avg())
+console.log(make_avg());
+
+// Task 4 
+
+const binaryString = '001100101011101110000010101000101011100';
+
+function count_zero(){
+    let arraysMethod = binaryString.split('');
+    let count = 0
+    for(let i of arraysMethod){
+        if(i == 0){
+            count++
+        }
+    }
+    return count;
+}
+
+let counts = count_zero();
+
+console.log(counts)
